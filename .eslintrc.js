@@ -12,7 +12,7 @@ module.exports = {
   ],
   plugins: ["import", "prettier", "eslint-plugin-prettier"],
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 8,
   },
   globals: {
     var1: "writable",
@@ -20,5 +20,6 @@ module.exports = {
   },
   rules: {
     "prettier/prettier": "error",
+    "no-unused-vars": "warn",
   },
 };
